@@ -14,3 +14,10 @@ throw an exception. If the version is same it will override the existing record.
 2. Store should not allow the trade which has less maturity date then today date.
 3. Store should automatically update the expire flag if in a store the trade crosses the maturity
 date.
+
+# Post Request:- 
+http://localhost:8080/trade
+ Body { "tradeId":"T2", "version":1, "counterParty":"CP2",
+"bookId": "B1", "maturityDate": "2024-05-21", "expiredFlag":"Y" }
+# Get Request:-
+http://localhost:8080/trade
